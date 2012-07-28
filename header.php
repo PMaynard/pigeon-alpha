@@ -40,6 +40,7 @@
 </head>
 
 <body>
+<a target="_BLANK" href="https://github.com/PMaynard/pigeon-alpha"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
 <div id="doc2" class="yui-t7">
 	<div id="hd">
 		<a href="<?php bloginfo('url'); ?>" title="<?php bloginfo('name'); ?>">
