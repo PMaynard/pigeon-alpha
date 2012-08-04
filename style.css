@@ -78,7 +78,8 @@ License URI:
 .lower {
 	background-image: url('images/light-bg.png');
 	margin-top: 1.1em;
-	color: #000;
+	color: #333333;
+	font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
 }
 
 .lower a {
@@ -140,8 +141,62 @@ License URI:
 	width: 25%;
 }
 
+.right ul li {
+	list-style: none;
+}
+
 /* COMMENT STUFFS */
 
-.alt {
-	background-color: gray; 
+ol.commentlist{
+	margin: 10px 5px;
+	padding: 10px;
+}
+.commentlist .comment-body{
+	padding: 10px;
+	background: #EFEFEF;
+	border: solid thin #DEDEDE;
+	margin: 10px 0;
+	position: relative;
+}
+
+.comment-body a.comment-reply-link{
+	color: #AEAEAE;
+}
+
+ol.commentlist li{
+	list-style: none;
+}
+
+ol.commentlist img.avatar{
+	padding: 5px;
+	background: #DEDEDE;
+	border: solid thin #CECECE;
+	float: right;
+	display: block;
+	margin: 15px;
+	width: 32px;
+	height: 32px;
+}
+ol.commentlist .comment-author{
+	line-height: 25px;
+}
+.comment-body cite.fn{
+	font-size: 14px;
+	font-style: normal;
+}
+.commentmetadata a{
+	margin: 0;
+	font-size: 11px;
+	color: #999;
+}
+.comment-body p{
+	margin: 5px;
+}
+ 
+.comment-body .comment-author.vcard{
+	margin: 0;
+}
+
+#respond textarea  {
+	width: 100%;
 }

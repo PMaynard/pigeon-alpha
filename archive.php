@@ -2,6 +2,22 @@
 
 <div class="excerpt">
 
+
+<?php $post = $posts[0]; // Thank you kubric template, Hack. Set $post so that the_date() works. ?>
+<?php /* If this is a category archive */ if (is_category()) { ?>
+<h1><?php single_cat_title("Viewing Category "); ?></h1>
+<?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
+<h1><?php single_tag_title("Viewing Tags "); ?></h1>
+<?php /* If this is a daily archive */ } elseif (is_day()) { ?>
+<h1>Viewing Archive: <?php the_time('F jS Y'); ?></h1>
+<?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+<h1>Viewing Monthly Archive <?php the_time('F Y'); ?></h1>
+<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+<h1>Viewing Yearly Archive <?php the_time('Y'); ?></h1>
+<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+<h1>Archives</h1>
+<?php } ?>
+
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); if( $post->ID == $do_not_duplicate ) continue; ?>
 
  <div class="small-post">

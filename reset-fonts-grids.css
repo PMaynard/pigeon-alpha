@@ -1,7 +1,6 @@
 html {
-color: #fff;
-background:#FFF;
 background-image:url('images/dark-bg.png');
+color: #fff;
 }
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
@@ -83,6 +82,16 @@ text-align: center;
 padding-top: 1.5em;
 padding-bottom: 1.5em;
 background-image: url('images/dark_geometric.png');
+}
+
+#ft a {
+color: #c8e052;
+text-decoration: none;
+}
+
+#ft a:hover {
+color: #7c8c31;
+text-decoration: underline;
 }
 
 #doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7 {

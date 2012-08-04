@@ -89,7 +89,7 @@
     </div>
 
     <div class="yui-b">
-    <?php if( is_home() ) : ?> 
+    <?php if( is_home() or is_search() ) : ?> 
       <div id="tagcloud">
         <?php if ( function_exists('wp_tag_cloud') ) : ?>
         <ul>
@@ -102,7 +102,7 @@
 
        <div id="more">
 
-        <?php if( ! is_home() ) : ?> 
+        <?php if ( ! (is_home() or is_search()) ) : ?>
           <div id="tagcloud">
             <?php if ( function_exists('wp_tag_cloud') ) : ?>
             <ul>

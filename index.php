@@ -3,7 +3,7 @@
 <!-- Start the Loop. -->
  <?php if ( have_posts() ) : ?>
 
- <?php if ( ! is_paged() || is_search() ) : ?>
+ <?php if ( !(is_paged() or is_search()) ) : ?>
 
   <?php $my_query = new WP_Query('posts_per_page=1');
   while ($my_query->have_posts()) : $my_query->the_post();
@@ -21,9 +21,6 @@
  <?php endwhile; ?> 
 
  <?php endif; ?>
-
-
-
 
 <div class="excerpt">
 
