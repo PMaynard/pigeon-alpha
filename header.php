@@ -28,6 +28,7 @@
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/shBrushBash.js"></script>
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/shBrushPlain.js"></script>
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/shBrushPhp.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/shBrushJScript.js"></script>
 
   <!-- Start wp_head -->
   <?php wp_head(); ?>
