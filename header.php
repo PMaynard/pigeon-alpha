@@ -27,6 +27,7 @@
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/shCore.js"></script>
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/shBrushBash.js"></script>
   <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/shBrushPlain.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/scripts/shBrushPhp.js"></script>
 
   <!-- Start wp_head -->
   <?php wp_head(); ?>
@@ -56,11 +57,11 @@
             <!-- PUT MAIN COLUMN 1 CODE HERE -->
             <h1>Programming</h1>
             <ul>
-    <?php $my_query = new WP_Query('cat=11&showposts=5'); ?>
-    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
-    <li><a href="<?php the_permalink() ?>" title="Permanent Link to: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
-    <?php endwhile; ?>
-          </ul>
+              <?php $my_query = new WP_Query('cat=11&showposts=5'); ?>
+              <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+              <li><a href="<?php the_permalink() ?>" title="Permanent Link to: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+              <?php endwhile; ?>
+            </ul>
           </div>
           <div class="yui-u">
             <!-- PUT MAIN COLUMN 2 CODE HERE -->
