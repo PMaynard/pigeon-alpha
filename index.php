@@ -22,6 +22,7 @@
 
  <?php endif; ?>
 
+<?php if(is_search()) echo "<h1>Searching for: " . get_search_query() . "</h1>"; ?>
 <div class="excerpt">
 
  <?php while ( have_posts() ) : the_post(); if( $post->ID == $do_not_duplicate ) continue; ?>
@@ -55,3 +56,5 @@
 </div> <!-- End Wrapper -->
 </div> <!-- End Lower -->
 <?php get_footer(); ?>
+</body>
+</html>

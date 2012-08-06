@@ -49,3 +49,5 @@
 </div> <!-- End Wrapper -->
 </div> <!-- End Lower -->
 <?php get_footer(); ?>
+</body>
+</html>

@@ -56,12 +56,12 @@
             <!-- PUT MAIN COLUMN 1 CODE HERE -->
             <h1>Top 5 Most Viewed</h1>
     <ul>
-    <?php
+    <?php /*
       // This will break on search and when it find no posts, this needs a dedicated loopything.
       if ( count( $posts ) > 0 ): 
         foreach ( wmp_get_popular( array( 'limit' => 5, 'post_type' => 'post', 'range' => 'all_time' ) ) as $post ): setup_postdata( $post ); ?>
         <li><a href="<?php the_permalink() ?>" title="<?php echo esc_attr(get_the_title() ? get_the_title() : get_the_ID()); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a></li>
-        <?php endforeach; endif; ?>
+        <?php endforeach; endif; */?>
     </ul>
           </div>
           <div class="yui-u">
