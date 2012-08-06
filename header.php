@@ -54,15 +54,13 @@
         <div class="yui-gb">
           <div class="yui-u first">
             <!-- PUT MAIN COLUMN 1 CODE HERE -->
-            <h1>Top 5 Most Viewed</h1>
-    <ul>
-    <?php /*
-      // This will break on search and when it find no posts, this needs a dedicated loopything.
-      if ( count( $posts ) > 0 ): 
-        foreach ( wmp_get_popular( array( 'limit' => 5, 'post_type' => 'post', 'range' => 'all_time' ) ) as $post ): setup_postdata( $post ); ?>
-        <li><a href="<?php the_permalink() ?>" title="<?php echo esc_attr(get_the_title() ? get_the_title() : get_the_ID()); ?>"><?php if ( get_the_title() ) the_title(); else the_ID(); ?></a></li>
-        <?php endforeach; endif; */?>
-    </ul>
+            <h1>Programming</h1>
+            <ul>
+    <?php $my_query = new WP_Query('category_name=programming&showposts=5'); ?>
+    <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+    <li><a href="<?php the_permalink() ?>" title="Permanent Link to: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+    <?php endwhile; ?>
+          </ul>
           </div>
           <div class="yui-u">
             <!-- PUT MAIN COLUMN 2 CODE HERE -->
@@ -76,9 +74,9 @@
           </div>
           <div class="yui-u">
             <!-- PUT MAIN COLUMN 3 CODE HERE -->
-            <h1>Information</h1>
+            <h1>Systemless</h1>
             <ul>
-      <?php $my_query = new WP_Query('category_name=information&showposts=5'); ?>
+      <?php $my_query = new WP_Query('category_name=systemless&showposts=5'); ?>
       <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
       <li><a href="<?php the_permalink() ?>" title="Permanent Link to: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
       <?php endwhile; ?>
