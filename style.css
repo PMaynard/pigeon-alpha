@@ -145,6 +145,13 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	list-style: none;
 }
 
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
 /* COMMENT STUFFS */
 
 ol.commentlist{
