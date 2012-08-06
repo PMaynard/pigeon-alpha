@@ -56,7 +56,7 @@
             <!-- PUT MAIN COLUMN 1 CODE HERE -->
             <h1>Programming</h1>
             <ul>
-    <?php $my_query = new WP_Query('category=11&showposts=5'); ?>
+    <?php $my_query = new WP_Query('cat=11&showposts=5'); ?>
     <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
     <li><a href="<?php the_permalink() ?>" title="Permanent Link to: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
     <?php endwhile; ?>
@@ -66,7 +66,7 @@
             <!-- PUT MAIN COLUMN 2 CODE HERE -->
             <h1>Linux</h1>
             <ul>
-    <?php $my_query = new WP_Query('category=5s&showposts=5'); ?>
+    <?php $my_query = new WP_Query('cat=5s&showposts=5'); ?>
     <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
     <li><a href="<?php the_permalink() ?>" title="Permanent Link to: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
     <?php endwhile; ?>
@@ -76,7 +76,7 @@
             <!-- PUT MAIN COLUMN 3 CODE HERE -->
             <h1>Systemless</h1>
             <ul>
-      <?php $my_query = new WP_Query('category=12&showposts=5'); ?>
+      <?php $my_query = new WP_Query('cat=12&showposts=5'); ?>
       <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
       <li><a href="<?php the_permalink() ?>" title="Permanent Link to: <?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
       <?php endwhile; ?>
