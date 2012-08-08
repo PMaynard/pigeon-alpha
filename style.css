@@ -52,6 +52,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 #morebutton {
 	float: right;
+	cursor:pointer;
 }
 
 #more {
@@ -102,7 +103,7 @@ License URI: http://www.gnu.org/licenses/gpl-3.0.html
 }
 
 .post-title {
-	font-size: 1em;
+	font-size: 1.5em;
 	padding-bottom: 0.5em;
 }
 

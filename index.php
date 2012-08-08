@@ -36,6 +36,7 @@
   <?php endif; ?>
    <div class="entry">
      <?php (is_page() ? the_content() : the_excerpt() );?>
+ <?php if(!is_page()) : ?> <span class="read_more"><a href="<?php the_permalink(); ?>">[ Read More &rarr; ]</a></span> <?php endif; ?>
    </div>
 
  </div>  <!-- End small-post -->

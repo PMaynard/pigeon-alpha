@@ -26,6 +26,7 @@
 
    <div class="entry">
      <?php the_excerpt(); ?>
+     <span class="read_more"><a href="<?php the_permalink(); ?>">[ Read More &rarr; ]</a></span>
    </div>
 
  </div>  <!-- End small-post -->
