@@ -10,6 +10,12 @@
       ?>" />
   <meta name="keywords" content="Programming, linux, unix, how to, help, web development, java, c,c++, python, information, nation, pigeon, nation pigeon, php, css, html, software development life cycle, steampunk, anime, cyber, sci-fi, random, pete, osaka, Pete Maynard, Peter, Maynard, blog, Aberystwyth, computer science"/>
   <title><?php bloginfo('name'); wp_title(); ?></title>
+
+<meta property="og:title" content="<?php echo (wp_title("",FALSE) ? wp_title("",FALSE) : bloginfo('name') ); ?>" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="<?php the_permalink() ?>" />
+<meta property="og:image" content="http://nationpigeon.com/wp-content/themes/pigeon-alpha/images/NationPigeonTitle.gif" />
+
   <link rel="profile" href="http://gmpg.org/xfn/11" />
   <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css" media="screen" />
   <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_directory'); ?>/reset-fonts-grids.css">
@@ -36,6 +42,19 @@
 
   <!-- Enable Syntact highlighter -->
   <script type="text/javascript">SyntaxHighlighter.defaults['toolbar'] = false; SyntaxHighlighter.defaults['class-name'] = "syntax"; SyntaxHighlighter.all();</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21206115-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script> 
 
