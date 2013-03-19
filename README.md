@@ -1,17 +1,18 @@
 PIGEON ALPHA
+============
 
 A wordpress template for nationpigeon.com, roughly based on (http://ulyssesonline.com/2008/07/03/black-green-theme/)
 
-Features: 
+### Features
 - License under GPLv3 [TODO: Change to MIT Licence]
 - Syntax highlighter
 - Widget sidebar
 - JQuery toggle bit.
 
-BUGS
+### BUGS
 Top five posts will not show when search returns no results.
 
-NICE LINKS
+### NICE LINKS
 http://subtlepatterns.com - Makes any site awesome.
 http://layouts.ironmyers.com - Would have given up if it wasn't for this site.
 http://codex.wordpress.org/Running_a_Development_Copy_of_WordPress - Big badaboom.
